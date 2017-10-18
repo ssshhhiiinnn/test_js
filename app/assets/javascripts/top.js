@@ -1,3 +1,6 @@
+// 練習
+
+// ①最初
 // function printHelloWithButton() {
 //   var btn = document.querySelector("input");
 //
@@ -13,10 +16,7 @@
 //
 // window.addEventListener("load", printHelloWithButton);
 
-
-
-
-
+// ②途中
 // window.addEventListener("load", function() {
 //   var btn = document.querySelector("input");
 //
@@ -27,13 +27,18 @@
 //   btn.addEventListener("click", printHello);
 // });
 
-
+// ③最終
+// window.addEventListener("load", function() {
+//   var btn = document.querySelector("input");
+//
+//   btn.addEventListener("click", function() {
+//     console.log("Hello world");
+//   });
+// });
 
 
 window.addEventListener("load", function() {
-  var btn = document.querySelector("input");
-
-  btn.addEventListener("click", function() {
-    console.log("Hello world");
+  $("li").on("click", function() {
+    console.log(this.id);
   });
 });
